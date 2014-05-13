@@ -15,9 +15,6 @@
         "php": ">=5.4.0",
         "nimetu/ryzom_extra": "1.x"
     },
-    "require-dev": {
-        "nimetu/ryzom_sheets": "1.x"
-    },
     "autoload": {
         "psr-0": {
             "Nel": "lib/",
