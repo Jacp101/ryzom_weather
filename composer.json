@@ -1,0 +1,27 @@
+{
+    "name": "nimetu/ryzom_weather",
+    "type": "library",
+    "description": "Ryzom Weather calculations",
+    "keywords": ["ryzom", "nel"],
+    "homepage": "http://bmsite.net",
+    "license": "LGPL",
+    "authors": [
+        {
+            "name": "Meelis Mägi",
+            "email": "nimetu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "nimetu/ryzom_extra": "1.x"
+    },
+    "require-dev": {
+        "nimetu/ryzom_sheets": "1.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Nel": "lib/",
+            "Ryzom": "lib/"
+        }
+    }
+}
