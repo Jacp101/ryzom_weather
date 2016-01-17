@@ -13,7 +13,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "nimetu/ryzom_extra": "1.x"
+        "nimetu/ryzom_extra": "1.x",
+        "ryzom/php-api": "~1"
     },
     "autoload": {
         "psr-0": {
