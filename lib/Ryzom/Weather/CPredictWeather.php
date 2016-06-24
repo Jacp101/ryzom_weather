@@ -67,10 +67,17 @@ class CPredictWeather
             return 0;
         }
 
+        /* old weather
         $noiseValue = $this->rawWeatherProvider($cycle);
 
         // sum all weights, usually adds up to 100
         $value = (int)($noiseValue * $wf->getWeatherSetupsTotalWeight());
+         */
+
+        $noiseValue = \Nel\Misc\wang_hash64($cycle);
+        // noise is 64bit unsigned, so use GMP library
+        // value = wangHash64(cycle) % wf.getWeatherSetupsTotalWeight();
+        $value = gmp_strval(gmp_mod($noiseValue, $wf->getWeatherSetupsTotalWeight()));
 
         $currWeight = 0;
         for ($k = 0; $k < $numWS; $k++) {

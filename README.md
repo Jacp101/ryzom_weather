@@ -6,6 +6,7 @@ Ryzom weather calculations.
 Requires
 --------
 * PHP 5.4 or greater
+* GMP extension
 
 License
 --------
